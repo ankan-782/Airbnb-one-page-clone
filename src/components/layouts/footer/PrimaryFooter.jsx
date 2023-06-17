@@ -1,3 +1,5 @@
+import SectionDivider from "../../common/SectionDivider";
+
 export default function PrimaryFooter() {
     const footerContent = [
         {
@@ -64,6 +66,7 @@ export default function PrimaryFooter() {
                     {content}
                 </div>
             </div>
+            <SectionDivider extraClasses="hidden laptop:block container tablet:px-10 laptop:px-20" />
         </footer>
     );
 }

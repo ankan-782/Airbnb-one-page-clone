@@ -1,3 +1,4 @@
+import SectionDivider from "../components/common/SectionDivider";
 import IconButton from "../components/common/button/IconButton";
 
 export default function ThingsToKnow() {
@@ -37,7 +38,7 @@ export default function ThingsToKnow() {
 
     return (
         <section aria-label="things to know">
-            <div className="container tablet:px-10 laptop:px-20 | pt-6 tablet:py-12 space-y-6">
+            <div className="container tablet:px-10 laptop:px-20 | pt-6 tablet:py-12 tablet:space-y-6">
                 <h2 className="font-semibold text-[22px] hidden tablet:block">{thingsToKnow.title}</h2>
                 <div className="grid grid-cols-1 tablet:grid-cols-3">
                     {thingsToKnow.things.map(thing =>
@@ -48,15 +49,12 @@ export default function ThingsToKnow() {
                                     thing.rules.map(rule => <p key={rule}>{rule}</p>)
                                 }
                             </div>
-                            <IconButton buttonClassName="underline font-semibold flex items-center gap-x-1">{thing.buttonText}</IconButton>
-                            {/* <ContainedButton buttonClassName="rounded-lg px-6 py-3.5 bg-neutral-700 text-white font-semibold hover:bg-black active:scale-95 transition-transform">Message Host</ContainedButton> */}
-
-                            {/* <OutlinedButton buttonClassName="rounded-lg px-6 py-3.5 border border-solid border-neutral-700 font-semibold hover:bg-neutral-200 active:scale-95 transition-transform">Show all 171 reviews</OutlinedButton> */}
+                            <IconButton>{thing.buttonText}</IconButton>
                         </div>
                     )}
                 </div>
             </div>
-            <div className="border-b border-solid border-neutral-600/20"></div>
+            <SectionDivider />
         </section>
     );
 }

@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import colors from 'tailwindcss/colors';
-
 export default {
     content: [
         "./index.html",
@@ -30,10 +28,9 @@ export default {
             inherit: 'inherit',
             transparent: 'transparent',
             current: 'currentColor',
-            blue: colors.blue,
             primary: {
-                300: '#d80566',
-                400: '#ff385c'
+                300: '#e61e4e',
+                400: '#d80566'
             },
             neutral: {
                 200: '#f7f7f7',

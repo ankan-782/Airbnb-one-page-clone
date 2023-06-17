@@ -1,3 +1,5 @@
+import SectionDivider from "../components/common/SectionDivider";
+
 export default function RelatedListings() {
     const countryOptions = {
         title: 'Explore other options in and around Valencia',
@@ -83,7 +85,7 @@ export default function RelatedListings() {
                     </nav>
                 </div>
             </div>
-            <div className="border-b border-solid border-neutral-600/20"></div>
+            <SectionDivider />
         </section>
     );
 }
