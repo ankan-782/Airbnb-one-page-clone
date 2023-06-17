@@ -1,7 +1,7 @@
 export default function SecondaryFooter() {
     return (
         <footer aria-label="secondary-footer" className="bg-neutral-200">
-            <div className="container tablet:px-10 laptop:px-20 | py-6 text-sm">
+            <div className="container tablet:px-10 laptop:px-20 | pt-6 pb-[108px] tablet:pb-6 text-sm">
                 <div className="laptop:flex laptop:items-center laptop:justify-between max-laptop:space-y-4">
                     <div className="flex items-center tablet:justify-center space-x-10 laptop:space-x-4 laptop:order-last">
                         <div className="flex items-center font-semibold">

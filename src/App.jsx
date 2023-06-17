@@ -5,6 +5,7 @@ import SecondaryFooter from './components/layouts/footer/SecondaryFooter';
 import PrimaryHeader from './components/layouts/header/PrimaryHeader';
 import SecondaryHeader from './components/layouts/header/SecondaryHeader';
 import Address from './containers/Address';
+import AirbnbHeroCarousel from './containers/AirbnbHeroCarousel';
 import RelatedListings from './containers/RelatedListings';
 import Reviews from './containers/Reviews';
 import ThingsToKnow from './containers/ThingsToKnow';
@@ -17,6 +18,7 @@ function App() {
             <PrimaryHeader />
             <SecondaryHeader />
             <Main>
+                <AirbnbHeroCarousel />
                 <Details />
                 <Reviews />
                 <Address />

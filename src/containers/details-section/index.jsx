@@ -23,7 +23,7 @@ export default function Details() {
                     <Address />
                 </div>
 
-                <div className="tablet:border tablet:border-solid tablet:border-neutral-600/20 tablet:rounded-xl tablet:shadow-lg tablet:p-6 space-y-6">
+                <div className="tablet:border tablet:border-solid tablet:border-neutral-600/20 tablet:rounded-xl tablet:shadow-lg tablet:p-6 space-y-6 hidden tablet:block">
                     <div>
                         <div>
                             <span className="text-[22px] font-semibold mr-2">$37</span>
