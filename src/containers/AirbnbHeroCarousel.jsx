@@ -1,5 +1,10 @@
 import { useRef, useState } from "react";
 import img1 from '../assets/images/rooms/img1.webp';
+import img2 from '../assets/images/rooms/img2.webp';
+import img3 from '../assets/images/rooms/img3.webp';
+import img4 from '../assets/images/rooms/img4.webp';
+import img5 from '../assets/images/rooms/img5.webp';
+import img6 from '../assets/images/rooms/img6.webp';
 import SectionDivider from "../components/common/SectionDivider";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
@@ -32,27 +37,27 @@ export default function AirbnbHeroCarousel({ handleNavVisibilityChange }) {
     const roomImages = [
         {
             id: 1,
-            imgPath: '../assets/images/rooms/img1.webp',
+            imgPath: img1,
         },
         {
             id: 2,
-            imgPath: '../assets/images/rooms/img2.webp',
+            imgPath: img2,
         },
         {
             id: 3,
-            imgPath: '../assets/images/rooms/img4.webp',
+            imgPath: img3,
         },
         {
             id: 4,
-            imgPath: '../assets/images/rooms/img3.webp',
+            imgPath: img4,
         },
         {
             id: 5,
-            imgPath: '../assets/images/rooms/img5.webp',
+            imgPath: img5,
         },
         {
             id: 6,
-            imgPath: '../assets/images/rooms/img6.webp',
+            imgPath: img6,
         },
     ];
 

@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import SectionDivider from "../components/common/SectionDivider";
 import IconButton from "../components/common/button/IconButton";
 import OutlinedButton from "../components/common/button/OutlinedButton";
+import avatar1 from '../assets/images/avatars/natasha.webp';
+import avatar2 from '../assets/images/avatars/martin.webp';
+import avatar3 from '../assets/images/avatars/saskia.webp';
+import avatar4 from '../assets/images/avatars/merel.webp';
+import avatar5 from '../assets/images/avatars/clara.webp';
+import avatar6 from '../assets/images/avatars/sean.webp';
 
 export default function Reviews() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -52,42 +58,42 @@ export default function Reviews() {
         reviewInfo: [
             {
                 id: 1,
-                avatar: '../assets/images/avatars/natasha.webp',
+                avatar: avatar1,
                 name: 'Natasha',
                 date: 'May 2023',
                 comment: 'Great location and a wonderful host, couldn\'t ask for more'
             },
             {
                 id: 2,
-                avatar: '../assets/images/avatars/martin.webp',
+                avatar: avatar2,
                 name: 'Martin',
                 date: 'May 2023',
                 comment: 'I had a Great Time Staying at Sagrario’s place! Her apartment is perfectly located in the centre of el Carmen. Her information on festivities and the area were one of a kind. I can only recommend you to stay at her’s. Muchas gracias Sagrario!'
             },
             {
                 id: 3,
-                avatar: '../assets/images/avatars/saskia.webp',
+                avatar: avatar3,
                 name: 'Saskia',
                 date: 'May 2023',
                 comment: 'Sagrario is a superhost! She is very kind, helpful and friendly. She gives you advice about activities in Valencia.The apartment is great, clean and in the middle of the historic center. I loved staying here! I definitely want to go back!'
             },
             {
                 id: 4,
-                avatar: '../assets/images/avatars/merel.webp',
+                avatar: avatar4,
                 name: 'Merel',
                 date: 'March 2023',
                 comment: 'I loved staying with Sagrario. She is an incredible host. She’s friendly, always responds quickly and she made me feel at home. She gave me more than enough recommendations for bars, restaurants and museums. All the recommendations I tried out were a succes! I’ll definitely stay here again next time I’m in Valencia!'
             },
             {
                 id: 5,
-                avatar: '../assets/images/avatars/clara.webp',
+                avatar: avatar5,
                 name: 'Clara',
                 date: 'March 2023',
                 comment: 'She was really kind. Gracias Sagrario!'
             },
             {
                 id: 6,
-                avatar: '../assets/images/avatars/sean.webp',
+                avatar: avatar6,
                 name: 'Sean',
                 date: 'February 2023',
                 comment: 'Best bnb host! Very helpful whenever you need recommendations, very welcoming and makes you feel at home. Everything was perfect!'
