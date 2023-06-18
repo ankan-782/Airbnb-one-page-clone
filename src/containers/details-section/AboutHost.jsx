@@ -33,9 +33,9 @@ export default function AboutHost() {
     ];
 
     return (
-        <div className="py-8 space-y-6">
+        <div className="pt-8 space-y-6">
             <h2 className="font-semibold text-[22px]">Meet your host</h2>
-            <div className="tablet:grid tablet:place-items-center tablet:bg-neutral-400 tablet:py-10 tablet:px-6 tablet:rounded-3xl">
+            <div className="tablet:grid tablet:place-items-center tablet:bg-neutral-400 tablet:pt-10 tablet:pb-6 tablet:px-6 tablet:rounded-3xl">
                 <div className="space-y-6">
                     <div className="bg-white shadow-2xl rounded-3xl py-8 px-6 max-w-[380px]">
                         <div className="flex items-center justify-center gap-8 mobile-lg:gap-14">

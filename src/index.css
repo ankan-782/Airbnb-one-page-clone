@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .cards-small-device::-webkit-scrollbar {
+    .side-scrollbar-hide::-webkit-scrollbar {
         display: none !important;
         height: 0;
         width: 0;

@@ -3,7 +3,7 @@ import SectionDivider from "../../components/common/SectionDivider";
 export default function SleepingOverview() {
     return (
         <>
-            <div className="py-6 space-y-4">
+            <div className="py-8 tablet:py-12 space-y-4">
                 <h2 className="font-semibold text-[22px]">Where you'll sleep</h2>
                 <div className="grid grid-cols-2 laptop:grid-cols-3">
                     <div>

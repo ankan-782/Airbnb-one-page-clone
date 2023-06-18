@@ -1,15 +1,14 @@
 import SectionDivider from "../../common/SectionDivider";
 import ContainedButton from "../../common/button/ContainedButton";
 
-export default function SecondaryHeader() {
+export default function SecondaryHeader({ isNavVisible, isPriceVisible }) {
     return (
         <>
-            {/* tablet:block */}
-            <header aria-label="primary-header" className="hidden fixed top-0 left-0 w-full bg-white">
+            {!isNavVisible && <header aria-label="secondary-header" className="hidden tablet:block fixed z-50 top-0 left-0 w-full bg-white">
                 <div className="container tablet:px-10 laptop:px-20 | py-4">
                     <div className="flex items-center justify-between">
                         <nav role="navigation">
-                            <ul className="flex items-center gap-6 font-semibold text-sm py-3.5">
+                            <ul className="flex items-center gap-6 font-semibold text-sm py-4">
                                 <li>
                                     <a href="#">Photos</a>
                                 </li>
@@ -24,7 +23,7 @@ export default function SecondaryHeader() {
                                 </li>
                             </ul>
                         </nav>
-                        <div className="flex items-center gap-4 hidden">
+                        {!isPriceVisible && <div className="hidden tablet:flex items-center gap-4">
                             <div>
                                 <div>
                                     <span className="font-semibold mr-1">$37</span>
@@ -39,13 +38,13 @@ export default function SecondaryHeader() {
                                 </div>
                             </div>
                             <ContainedButton extraClasses="bg-gradient-to-r from-primary-300 to-primary-400">Check availability</ContainedButton>
-                        </div>
+                        </div>}
                     </div>
                 </div>
                 <SectionDivider />
-            </header >
+            </header >}
 
-            <header aria-label="secondary-header" className="block tablet:hidden fixed bottom-0 z-10 w-full bg-white">
+            <header aria-label="secondary-header" className="block tablet:hidden fixed bottom-0 z-50 w-full bg-white">
                 <SectionDivider />
                 <div className="container tablet:px-10 laptop:px-20 | py-4">
                     <div className="flex items-center justify-between">

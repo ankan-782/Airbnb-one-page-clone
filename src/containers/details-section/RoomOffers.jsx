@@ -33,7 +33,7 @@ export default function RoomOffers() {
                         </div>
                     </div>
                 </div>
-                <div className="cards-small-device | grid grid-cols-[minmax(120px,_1fr)_minmax(120px,_1fr)_minmax(120px,_1fr)] gap-2 overflow-x-scroll snap-x snap-mandatory">
+                <div className="side-scrollbar-hide | grid grid-cols-[minmax(120px,_1fr)_minmax(120px,_1fr)_minmax(120px,_1fr)] gap-2 overflow-x-scroll snap-x snap-mandatory">
                     {roomOffers.map(offer =>
                         <div key={offer.id} className="p-4 laptop:py-4 laptop:px-6 text-xs laptop:text-sm border border-solid border-neutral-600/20 rounded-xl flex flex-col laptop:flex-row justify-between laptop:items-center laptop:justify-normal gap-4 snap-start snap-always">
                             <div>

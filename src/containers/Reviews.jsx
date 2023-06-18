@@ -106,47 +106,49 @@ export default function Reviews() {
     }
 
     return (
-        <section aria-label="reviews">
-            <div className="container tablet:px-10 laptop:px-20 | py-8 tablet:py-12 space-y-6 tablet:space-y-8">
-                <h2 className="font-semibold text-[22px] flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', height: '16px', width: '16px', fill: 'currentcolor' }}><path fillRule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                    <span>{reviewsSection.stars} · {reviewsSection.reviews} reviews</span>
-                </h2>
-                <div className="hidden tablet:grid grid-cols-2 gap-x-14 gap-y-3">
-                    {reviewsSection.reviewFactor.map(factor =>
-                        <div key={factor.id} className="flex justify-between items-center">
-                            <div className="w-full">
-                                <p>{factor.name}</p>
-                            </div>
-                            <div className="w-1/2 flex items-center gap-x-3">
-                                <div className="bg-gray-200 w-full rounded-full h-1">
+        <>
+            <section aria-label="reviews">
+                <div className="container tablet:px-10 laptop:px-20 | py-8 tablet:py-12 space-y-6 tablet:space-y-8">
+                    <h2 className="font-semibold text-[22px] flex items-center gap-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', height: '16px', width: '16px', fill: 'currentcolor' }}><path fillRule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                        <span>{reviewsSection.stars} · {reviewsSection.reviews} reviews</span>
+                    </h2>
+                    <div className="hidden tablet:grid grid-cols-2 gap-x-14 gap-y-3">
+                        {reviewsSection.reviewFactor.map(factor =>
+                            <div key={factor.id} className="flex justify-between items-center">
+                                <div className="w-full">
+                                    <p>{factor.name}</p>
+                                </div>
+                                <div className="w-1/2 flex items-center gap-x-3">
+                                    <div className="bg-gray-200 w-full rounded-full h-1">
 
-                                    <div className="bg-neutral-700 h-1 rounded-full" style={ratingInPercentages(factor.rating)}></div>
+                                        <div className="bg-neutral-700 h-1 rounded-full" style={ratingInPercentages(factor.rating)}></div>
+                                    </div>
+                                    <span>{factor.rating.toFixed(1)}</span>
                                 </div>
-                                <span>{factor.rating.toFixed(1)}</span>
-                            </div>
-                        </div>)}
-                </div>
-                <div className="cards-small-device | laptop:grid laptop:grid-cols-2 flex tablet:flex-col gap-4 tablet:gap-10 overflow-x-scroll snap-x snap-mandatory">
-                    {reviewsSection.reviewInfo.slice(0, cardCount).map(info =>
-                        <div key={info.id} className="h-60 tablet:h-auto p-5 tablet:p-0 w-11/12 tablet:w-auto border border-solid border-neutral-600/20 rounded-xl tablet:rounded-none tablet:border-none flex flex-col flex-shrink-0 justify-between laptop:justify-normal snap-start snap-always tablet:space-y-2 tablet:space-y-reverse">
-                            <div className="space-y-2">
-                                <p className="line-clamp-3">{info.comment}</p>
-                                <IconButton>Show more</IconButton>
-                            </div>
-                            <div className="flex gap-3 items-center tablet:order-first">
-                                <img src={info.avatar} alt="people image who reviewed" className="rounded-full w-10 h-10" />
-                                <div>
-                                    <p className="font-semibold">{info.name}</p>
-                                    <p className="text-neutral-600">{info.date}</p>
+                            </div>)}
+                    </div>
+                    <div className="side-scrollbar-hide | laptop:grid laptop:grid-cols-2 flex tablet:flex-col gap-4 tablet:gap-10 overflow-x-scroll snap-x snap-mandatory">
+                        {reviewsSection.reviewInfo.slice(0, cardCount).map(info =>
+                            <div key={info.id} className="h-60 tablet:h-auto p-5 tablet:p-0 w-11/12 tablet:w-auto border border-solid border-neutral-600/20 rounded-xl tablet:rounded-none tablet:border-none flex flex-col flex-shrink-0 justify-between laptop:justify-normal snap-start snap-always tablet:space-y-2 tablet:space-y-reverse">
+                                <div className="space-y-2">
+                                    <p className="line-clamp-3">{info.comment}</p>
+                                    <IconButton>Show more</IconButton>
+                                </div>
+                                <div className="flex gap-3 items-center tablet:order-first">
+                                    <img src={info.avatar} alt="people image who reviewed" className="rounded-full w-10 h-10" />
+                                    <div>
+                                        <p className="font-semibold">{info.name}</p>
+                                        <p className="text-neutral-600">{info.date}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )}
+                        )}
+                    </div>
+                    <OutlinedButton extraClasses="w-full tablet:w-auto">Show all 171 reviews</OutlinedButton>
                 </div>
-                <OutlinedButton extraClasses="w-full tablet:w-auto">Show all 171 reviews</OutlinedButton>
-            </div>
+            </section>
             <SectionDivider extraClasses="container tablet:px-10 laptop:px-20" />
-        </section>
+        </>
     );
 }

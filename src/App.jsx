@@ -10,16 +10,20 @@ import RelatedListings from './containers/RelatedListings';
 import Reviews from './containers/Reviews';
 import ThingsToKnow from './containers/ThingsToKnow';
 import Details from './containers/details-section/index';
+import useHeaderNavVisibility from './hooks/useHeaderNavVisibility';
+import useHeaderPriceVisibility from './hooks/useHeaderPriceVisibility';
 
 function App() {
+    const { handleNavVisibilityChange, isNavVisible } = useHeaderNavVisibility();
+    const { handlePriceVisibilityChange, isPriceVisible } = useHeaderPriceVisibility();
 
     return (
         <>
             <PrimaryHeader />
-            <SecondaryHeader />
+            <SecondaryHeader isNavVisible={isNavVisible} isPriceVisible={isPriceVisible} />
             <Main>
-                <AirbnbHeroCarousel />
-                <Details />
+                <AirbnbHeroCarousel handleNavVisibilityChange={handleNavVisibilityChange} />
+                <Details handlePriceVisibilityChange={handlePriceVisibilityChange} />
                 <Reviews />
                 <Address />
                 <ThingsToKnow />

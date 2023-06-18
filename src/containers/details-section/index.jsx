@@ -1,4 +1,5 @@
 import ContainedButton from "../../components/common/button/ContainedButton";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import AboutHost from "./AboutHost";
 import AboutPlace from "./AboutPlace";
 import Address from "./Address";
@@ -8,9 +9,25 @@ import RoomOffers from "./RoomOffers";
 import RoomOverviews from "./RoomOverviews";
 import SleepingOverview from "./SleepingOverview";
 
-export default function Details() {
+export default function Details({ handlePriceVisibilityChange }) {
+    // component visibility checking functions - used in observer part conditionally
+    const priceVisibilityTrue = () => {
+        handlePriceVisibilityChange(true);
+    };
+
+    const priceVisibilityFalse = () => {
+        handlePriceVisibilityChange(false);
+    };
+    
+    let options = {
+        rootMargin: "-150px",
+    }
+
+    // intersection observer custom hook
+    const targetRef = useIntersectionObserver(priceVisibilityTrue, priceVisibilityFalse, options);
+
     return (
-        <section aria-label="details">
+        <section aria-label="details" ref={targetRef}>
             <div className="container tablet:px-10 laptop:px-20 | tablet:grid tablet:grid-cols-3 tablet:gap-10">
                 <div className="tablet:col-span-2 tablet:w-[90%]">
                     <RoomOffers />
