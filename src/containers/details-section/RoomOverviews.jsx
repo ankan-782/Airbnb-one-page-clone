@@ -24,7 +24,7 @@ export default function RoomOverviews() {
 
     return (
         <>
-            <div className="py-8">
+            <article className="py-8">
                 <div className="grid grid-cols-1 gap-4">
                     {overViews.map(element =>
                         <div key={element.id} className="flex gap-4">
@@ -38,7 +38,7 @@ export default function RoomOverviews() {
                         </div>
                     )}
                 </div>
-            </div>
+            </article>
 
             <SectionDivider />
         </>

@@ -1,9 +1,9 @@
 import SectionDivider from "../../components/common/SectionDivider";
 import IconButton from "../../components/common/button/IconButton";
 
-export default function Address() {
+export default function AddressInLowerDevice() {
     return (
-        <section aria-label="address" className="block tablet:hidden">
+        <article aria-label="address" className="block tablet:hidden">
             <div className="py-6 tablet:py-12 space-y-6">
                 <h2 className="font-semibold text-[22px]">Where you’ll be</h2>
                 <iframe
@@ -22,6 +22,6 @@ export default function Address() {
                 </div>
             </div>
             <SectionDivider />
-        </section>
+        </article>
     );
 }

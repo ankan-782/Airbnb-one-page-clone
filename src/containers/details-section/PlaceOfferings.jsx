@@ -70,7 +70,7 @@ export default function PlaceOfferings() {
 
     return (
         <>
-            <div className="py-8 tablet:py-12 space-y-6">
+            <article className="py-8 tablet:py-12 space-y-6">
                 <h2 className="font-semibold text-[22px]">What this place offers</h2>
                 <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4">
                     {placeOffers.slice(0, cardCount).map(element =>
@@ -83,7 +83,7 @@ export default function PlaceOfferings() {
                     )}
                 </div>
                 <OutlinedButton extraClasses="w-full tablet:w-auto">Show all 37 amenities</OutlinedButton>
-            </div>
+            </article>
 
             <SectionDivider />
         </>

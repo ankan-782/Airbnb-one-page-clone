@@ -22,7 +22,7 @@ export default function RoomOffers() {
 
     return (
         <>
-            <div className="py-6 space-y-6">
+            <article className="py-6 space-y-6">
                 <div className="flex justify-between gap-10">
                     <h2 className="font-semibold text-[22px]">Room in a rental unit hosted by Sagrario</h2>
                     <div className="flex-shrink-0">
@@ -43,7 +43,7 @@ export default function RoomOffers() {
                         </div>
                     )}
                 </div>
-            </div>
+            </article>
 
             <SectionDivider />
         </>
