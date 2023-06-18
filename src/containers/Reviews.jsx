@@ -52,42 +52,42 @@ export default function Reviews() {
         reviewInfo: [
             {
                 id: 1,
-                avatar: '/src/assets/images/avatars/natasha.webp',
+                avatar: '../assets/images/avatars/natasha.webp',
                 name: 'Natasha',
                 date: 'May 2023',
                 comment: 'Great location and a wonderful host, couldn\'t ask for more'
             },
             {
                 id: 2,
-                avatar: '/src/assets/images/avatars/martin.webp',
+                avatar: '../assets/images/avatars/martin.webp',
                 name: 'Martin',
                 date: 'May 2023',
                 comment: 'I had a Great Time Staying at Sagrario’s place! Her apartment is perfectly located in the centre of el Carmen. Her information on festivities and the area were one of a kind. I can only recommend you to stay at her’s. Muchas gracias Sagrario!'
             },
             {
                 id: 3,
-                avatar: '/src/assets/images/avatars/saskia.webp',
+                avatar: '../assets/images/avatars/saskia.webp',
                 name: 'Saskia',
                 date: 'May 2023',
                 comment: 'Sagrario is a superhost! She is very kind, helpful and friendly. She gives you advice about activities in Valencia.The apartment is great, clean and in the middle of the historic center. I loved staying here! I definitely want to go back!'
             },
             {
                 id: 4,
-                avatar: '/src/assets/images/avatars/merel.webp',
+                avatar: '../assets/images/avatars/merel.webp',
                 name: 'Merel',
                 date: 'March 2023',
                 comment: 'I loved staying with Sagrario. She is an incredible host. She’s friendly, always responds quickly and she made me feel at home. She gave me more than enough recommendations for bars, restaurants and museums. All the recommendations I tried out were a succes! I’ll definitely stay here again next time I’m in Valencia!'
             },
             {
                 id: 5,
-                avatar: '/src/assets/images/avatars/clara.webp',
+                avatar: '../assets/images/avatars/clara.webp',
                 name: 'Clara',
                 date: 'March 2023',
                 comment: 'She was really kind. Gracias Sagrario!'
             },
             {
                 id: 6,
-                avatar: '/src/assets/images/avatars/sean.webp',
+                avatar: '../assets/images/avatars/sean.webp',
                 name: 'Sean',
                 date: 'February 2023',
                 comment: 'Best bnb host! Very helpful whenever you need recommendations, very welcoming and makes you feel at home. Everything was perfect!'

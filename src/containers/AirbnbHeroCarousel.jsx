@@ -32,27 +32,27 @@ export default function AirbnbHeroCarousel({ handleNavVisibilityChange }) {
     const roomImages = [
         {
             id: 1,
-            imgPath: '/src/assets/images/rooms/img1.webp',
+            imgPath: '../assets/images/rooms/img1.webp',
         },
         {
             id: 2,
-            imgPath: '/src/assets/images/rooms/img2.webp',
+            imgPath: '../assets/images/rooms/img2.webp',
         },
         {
             id: 3,
-            imgPath: '/src/assets/images/rooms/img4.webp',
+            imgPath: '../assets/images/rooms/img4.webp',
         },
         {
             id: 4,
-            imgPath: '/src/assets/images/rooms/img3.webp',
+            imgPath: '../assets/images/rooms/img3.webp',
         },
         {
             id: 5,
-            imgPath: '/src/assets/images/rooms/img5.webp',
+            imgPath: '../assets/images/rooms/img5.webp',
         },
         {
             id: 6,
-            imgPath: '/src/assets/images/rooms/img6.webp',
+            imgPath: '../assets/images/rooms/img6.webp',
         },
     ];
 
