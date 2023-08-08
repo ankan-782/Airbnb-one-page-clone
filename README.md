@@ -35,13 +35,13 @@ Users should be able to:
 - Clone the repository:
 
 ```bash
-git clone https://github.com/ankan-782/Desh-Career-clone-website
+git clone https://github.com/ankan-782/Airbnb-one-page-clone.git
 ```
 
 - Navigate to the project directory:
 
 ```bash
-cd Desh-Career-clone-website
+cd Airbnb-one-page-clone
 ```
 
 - Install dependencies:
